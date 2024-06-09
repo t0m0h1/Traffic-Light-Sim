@@ -18,10 +18,6 @@ time_counter = 0
 
 
 
-current_light = "red"
-counter = 0
-
-
 def draw_traffic_light():
     # Draw the light housing
     pygame.draw.rect(screen, BLACK, (150, 100, 100, 300))
