@@ -4,9 +4,11 @@ import pygame
 white = (255, 255, 255)
 black = (0, 0, 0)
 red = (255, 0, 0)
+dim_red = (139, 0, 0)
 green = (0, 255, 0)
-blue = (0, 0, 255)
+dim_green = (0, 100, 0) 
 yellow = (255, 255, 0)
+dim_yellow = (139, 139, 0)
 
 # Initialize the game
 pygame.init()
@@ -23,9 +25,9 @@ while True:
             quit()
 
     pygame.draw.rect(screen, black, (300, 50, 200, 500))
-    pygame.draw.circle(screen, red, (400, 150), 50)
-    pygame.draw.circle(screen, yellow, (400, 300), 50)
-    pygame.draw.circle(screen, green, (400, 450), 50)
+    pygame.draw.circle(screen, dim_red, (400, 150), 50)
+    pygame.draw.circle(screen, dim_yellow, (400, 300), 50)
+    pygame.draw.circle(screen, dim_green, (400, 450), 50)
 
     pygame.display.update()
 
